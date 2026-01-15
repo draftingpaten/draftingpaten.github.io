@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://draftingpaten.github.io/sitemap.xml
