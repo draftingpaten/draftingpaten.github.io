@@ -228,6 +228,10 @@ section {
     clear: both;
 }
 
+.clear-left {
+    clear: left;
+}
+
 /* Main Widths */
 
 .col-1 {
