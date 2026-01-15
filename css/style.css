@@ -765,6 +765,14 @@ h6 {
     padding: 0 0 15px 0;
 }
 
+.text-highlight {
+    display: inline;
+    background: #fff;
+    padding: 0.12em 0.3em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
 .section-subtitle {
     font-size: 18px;
     padding-top: 0;

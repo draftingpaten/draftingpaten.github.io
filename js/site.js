@@ -31,6 +31,19 @@ $(document).ready(function () {
 		}
 	});
 
+	$("a.js-scroll[href^='#']").on("click", function (e) {
+		var target = $(this.getAttribute("href"));
+		if (target.length) {
+			e.preventDefault();
+			var headerHeight = $("#header").outerHeight() || 0;
+			$("html, body").stop().animate(
+				{ scrollTop: target.offset().top - headerHeight + 2 },
+				750,
+				"swing"
+			);
+		}
+	});
+
 	/* Sticky Navigation */
 	if (!!$.prototype.stickyNavbar) {
 		$('#header').stickyNavbar();
