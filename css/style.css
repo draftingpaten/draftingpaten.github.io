@@ -21,7 +21,7 @@
 - 6.2 Testimonials
 - 6.3 Gallery
 - 6.4 Video
-- 6.5 Clients
+- 6.5 Comparison
 - 6.6 Pricing Table
 7. Footer
 
@@ -216,7 +216,7 @@ section {
     padding: 20px;
 }
 
-#clients .col-2-3 [class*='col-'] {
+#comparison .col-2-3 [class*='col-'] {
     padding: 0;
 }
 
@@ -1389,9 +1389,9 @@ blockquote {
     cursor: pointer;
 }
 
-/* --------- 6.6 Clients ---------- */
+/* --------- 6.6 Comparison ---------- */
 
-#clients a {
+#comparison a {
     display: block;
     text-align: center;
     position: relative;
@@ -1400,7 +1400,7 @@ blockquote {
     color: #fff;
 }
 
-#clients img {
+#comparison img {
     display: inline-block;
     padding: 15px 25px;
 }
@@ -1422,7 +1422,7 @@ blockquote {
     transition: all 0.3s ease-out;
 }
 
-#clients a:hover .client-overlay {
+#comparison a:hover .client-overlay {
     opacity: 1;
 }
 
@@ -1435,7 +1435,7 @@ blockquote {
     display: inline-block;
 }
 
-#clients .comparison-table-wrap {
+#comparison .comparison-table-wrap {
     background: #fff;
     border: 1px solid #e1e1e1;
     border-radius: 8px;
@@ -1443,58 +1443,58 @@ blockquote {
     -webkit-overflow-scrolling: touch;
 }
 
-#clients .comparison-table {
+#comparison .comparison-table {
     width: 100%;
     border-collapse: collapse;
     min-width: 520px;
 }
 
-#clients .comparison-table th,
-#clients .comparison-table td {
+#comparison .comparison-table th,
+#comparison .comparison-table td {
     padding: 14px 16px;
     border-bottom: 1px solid #e1e1e1;
 }
 
-#clients .comparison-table thead th {
+#comparison .comparison-table thead th {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     background: #fafafa;
 }
 
-#clients .comparison-table tbody th {
+#comparison .comparison-table tbody th {
     font-weight: 600;
 }
 
-#clients .comparison-table td {
+#comparison .comparison-table td {
     text-align: center;
 }
 
-#clients .comparison-table th:first-child,
-#clients .comparison-table td:first-child {
+#comparison .comparison-table th:first-child,
+#comparison .comparison-table td:first-child {
     text-align: left;
 }
 
-#clients .comparison-table tbody tr:last-child th,
-#clients .comparison-table tbody tr:last-child td {
+#comparison .comparison-table tbody tr:last-child th,
+#comparison .comparison-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-#clients .comparison-table td i {
+#comparison .comparison-table td i {
     font-size: 18px;
     color: #111;
 }
 
-#clients .comparison-table .dash {
+#comparison .comparison-table .dash {
     color: #999;
     font-weight: 600;
 }
 
-#clients .comparison-cta {
+#comparison .comparison-cta {
     margin-top: 18px;
 }
 
-#clients .comparison-cta .button {
+#comparison .comparison-cta .button {
     color: black;
     width: 100%;
     text-align: center;
