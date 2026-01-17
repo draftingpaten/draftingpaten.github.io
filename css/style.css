@@ -1435,6 +1435,72 @@ blockquote {
     display: inline-block;
 }
 
+#clients .comparison-table-wrap {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#clients .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 520px;
+}
+
+#clients .comparison-table th,
+#clients .comparison-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#clients .comparison-table thead th {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #fafafa;
+}
+
+#clients .comparison-table tbody th {
+    font-weight: 600;
+}
+
+#clients .comparison-table td {
+    text-align: center;
+}
+
+#clients .comparison-table th:first-child,
+#clients .comparison-table td:first-child {
+    text-align: left;
+}
+
+#clients .comparison-table tbody tr:last-child th,
+#clients .comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#clients .comparison-table td i {
+    font-size: 18px;
+    color: #111;
+}
+
+#clients .comparison-table .dash {
+    color: #999;
+    font-weight: 600;
+}
+
+.sr-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 /* --------- 6.7 Pricing Table ---------- */
 
 .pricing-block-content {
