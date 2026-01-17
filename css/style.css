@@ -1483,7 +1483,7 @@ blockquote {
 
 .price {
     display: inline-block;
-    font-size: 62px;
+    font-size: 30px;
     font-weight: 700;
     position: relative;
 }
@@ -1491,7 +1491,7 @@ blockquote {
 .price span {
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -40px;
     font-size: 22px;
 }
 
