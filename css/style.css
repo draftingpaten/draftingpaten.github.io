@@ -1490,6 +1490,18 @@ blockquote {
     font-weight: 600;
 }
 
+#clients .comparison-cta {
+    margin-top: 18px;
+}
+
+#clients .comparison-cta .button {
+    color: black;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
 .sr-text {
     position: absolute;
     width: 1px;
