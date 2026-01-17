@@ -1502,6 +1502,65 @@ blockquote {
     margin: 0;
 }
 
+/* --------- 6.7 FAQ ---------- */
+
+.faq-accordion {
+    padding: 10px 0;
+}
+
+.faq-accordion .faq-item {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 18px 0;
+}
+
+.faq-accordion .faq-item:first-of-type {
+    border-top: 1px solid #e1e1e1;
+}
+
+.faq-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #222;
+    padding-right: 32px;
+    position: relative;
+    display: block;
+}
+
+.faq-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-accordion summary::marker {
+    display: none;
+}
+
+.faq-accordion summary::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+.faq-accordion .faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.faq-accordion .faq-answer {
+    color: #777;
+    padding-top: 10px;
+}
+
+.faq-accordion .faq-answer p {
+    margin: 0;
+}
+
 .sr-text {
     position: absolute;
     width: 1px;
@@ -1513,7 +1572,7 @@ blockquote {
     border: 0;
 }
 
-/* --------- 6.7 Pricing Table ---------- */
+/* --------- 6.8 Pricing Table ---------- */
 
 .pricing-block-content {
     background: #fff;
