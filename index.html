@@ -20,8 +20,9 @@
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="css/namari-color.css">
+    <!-- Namari Color CSS (defer to reduce render blocking) -->
+    <link rel="preload" href="css/namari-color.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/namari-color.css"></noscript>
 
     <!--Icon Fonts - Font Awesome Icons (defer to reduce render blocking)-->
     <link rel="preload" href="css/font-awesome.min.css" as="style"
@@ -37,6 +38,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&display=swap' rel='stylesheet'
         type='text/css'>
+
+    <!-- GLightbox CSS (defer to reduce render blocking) -->
+    <link rel="preload" href="css/glightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/glightbox.min.css" /></noscript>
 
     <!--Open Graph / Twitter-->
     <meta property="og:title" content="Jasa Drafting Dokumen Paten Indonesia">
@@ -303,15 +308,22 @@
                             formalitas untuk memastikan kelengkapan administrasi dan format dokumen. 
                             Setelah itu, pemohon dapat melanjutkan ke pemeriksaan substantif, yaitu penilaian kebaruan dan langkah inventif berdasarkan dokumen pembanding (prior art).
                         </p>
-                        <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-                        <a href="images/gallery-images/biasa.jpg" data-featherlight="image" class="button wow fadeIn"
-                        data-wow-delay="0.1s">
-                            PATEN BIASA <i class="fa fa-play" aria-hidden="true"></i>
-                        </a>
-                        <a href="images/gallery-images/sederhana.jpg" data-featherlight="image" class="button wow fadeIn"
-                        data-wow-delay="0.1s">
-                            PATEN SEDERHANA <i class="fa fa-play" aria-hidden="true"></i>
-                        </a>
+                        <a
+                        href="images/gallery-images/biasa.jpg"
+                        class="glightbox button"
+                        data-type="image"
+                        data-height="auto"
+                        data-zoomable="true"
+                        data-draggable="true"
+                        >PATEN BIASA <i class="fa fa-play"></i></a>
+                        <a
+                        href="images/gallery-images/sederhana.jpg"
+                        class="glightbox button"
+                        data-type="image"
+                        data-height="auto"
+                        data-zoomable="true"
+                        data-draggable="true"
+                        >PATEN SEDERHANA <i class="fa fa-play"></i></a>
                     </div>
 
                 </div>
@@ -580,7 +592,7 @@
     <!-- Include JavaScript resources -->
     <script src="js/jquery.1.8.3.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/featherlight.min.js"></script>
+    <script src="js/glightbox.min.js"></script>
     <script src="js/jquery.enllax.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>

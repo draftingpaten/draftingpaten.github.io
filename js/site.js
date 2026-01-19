@@ -6,6 +6,13 @@ $(document).ready(function () {
 		$('.video').simpleLightboxVideo();
 	}
 
+	/* GLightbox */
+	if (typeof GLightbox === "function") {
+		GLightbox({
+			selector: ".glightbox"
+		});
+	}
+
 	/*ScrollUp*/
 	if (!!$.prototype.scrollUp) {
 		$.scrollUp();
